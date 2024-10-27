@@ -33,11 +33,11 @@
            (GET "/" request (handler request))
            (route/not-found "bruh"))
 
-(defroutes app (-> app-routes
-                   json/wrap-json-response
-                   json/wrap-json-body
-                   batata-middleware
-                   visitor-middleware))
+(def app (-> app-routes
+             json/wrap-json-response
+             json/wrap-json-body
+             batata-middleware
+             visitor-middleware))
 
 (defn -main []
   (run-jetty app {:port 3000}))
