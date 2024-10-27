@@ -1,0 +1,18 @@
+# Clojure
+/.lein-repl-history
+/.nrepl-port
+/.shadow-cljs/
+.clj-kondo/
+.cpcache/
+target/
+*.jar
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+workspace.xml
+tasks.xml
+
+# OS-specific
+.DS_Store
+Thumbs.db
